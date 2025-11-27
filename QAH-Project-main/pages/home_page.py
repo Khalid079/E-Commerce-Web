@@ -15,7 +15,7 @@ class HomePage:
         self.products_cards = (By.CLASS_NAME,"product-thumb")
 
     def type_search(self,value):
-        self.logger.info('Home page search bar type function being executed')
+        self.logger.info('Home page search bar type for function being executed')
         self.driver.find_element(*self.search_txt).send_keys(value)
 
     def click_search(self):
